@@ -7,7 +7,7 @@ module.exports = {
         'primary-blue': '#529DE3',
         'primary-dark-blue': '#3B71A3',
       },
-      screens: { mm: '375px', ml: '425px' },
+      screens: { mm: '375px', mml: '400px', ml: '425px' },
     },
   },
   plugins: [],
