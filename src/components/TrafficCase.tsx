@@ -1,50 +1,22 @@
-import { MouseEvent, useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { useScore } from '../contexts/ScoreContext';
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import AnswerButton from './AnswerButton';
+import { useTrafficCase } from '../contexts/TrafficCaseContext';
+import { useScore } from '../contexts/ScoreContext';
 import trafficCases from '../mock/cases.json';
 
-interface TrafficCaseProps {
-  id: number;
-  title: string;
-  description: string;
-  youtube_code: string;
-  guilty: number;
-  explanation: string;
-}
-
 export default function TrafficCase() {
-  const [trafficCase, setTrafficCase] = useState<TrafficCaseProps | null>();
-
-  const { score, setScore, answeredCases, setAnsweredCases } = useScore();
+  const { answeredCases } = useScore();
+  const { trafficCase, setTrafficCase, setAlreadyAnswered } = useTrafficCase();
 
   const { id: parameterId } = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
+    setAlreadyAnswered(
+      answeredCases.some(({ id }) => id === Number(parameterId))
+    );
     setTrafficCase(trafficCases.find(({ id }) => id === Number(parameterId)));
   }, [parameterId]);
-
-  const alreadyAnswered = answeredCases.some(
-    ({ id }) => id === Number(parameterId)
-  );
-
-  function verifyAnswer(event: MouseEvent<HTMLButtonElement>) {
-    const { value } = event.currentTarget;
-    let correct = false;
-
-    if (alreadyAnswered) {
-      return;
-    }
-
-    if (Number(value) === trafficCase?.guilty) {
-      setScore(score + 10);
-      correct = true;
-    }
-
-    setAnsweredCases([...answeredCases, { id: Number(parameterId), correct }]);
-    navigate(`/jogar/${parameterId}/explicacao`);
-  }
 
   return (
     <div className="flex flex-col gap-4">
@@ -65,21 +37,9 @@ export default function TrafficCase() {
           Quem você considera o culpado pelo incidente/acidente?
         </h2>
         <div className="flex flex-col flex-wrap items-center justify-center gap-2 mml:flex-row">
-          <AnswerButton
-            guilty="bike"
-            onClick={verifyAnswer}
-            disabled={alreadyAnswered}
-          />
-          <AnswerButton
-            guilty="both"
-            onClick={verifyAnswer}
-            disabled={alreadyAnswered}
-          />
-          <AnswerButton
-            guilty="car"
-            onClick={verifyAnswer}
-            disabled={alreadyAnswered}
-          />
+          <AnswerButton guilty="bike" />
+          <AnswerButton guilty="both" />
+          <AnswerButton guilty="car" />
         </div>
       </div>
     </div>
