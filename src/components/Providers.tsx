@@ -4,11 +4,14 @@ import TrafficCaseProvider from '../contexts/TrafficCaseContext';
 
 export default function Providers({
   children,
+  className,
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <DifficultyProvider>
       <TrafficCaseProvider>
-        <ScoreProvider>{children}</ScoreProvider>
+        <ScoreProvider>
+          <div className={className}>{children}</div>
+        </ScoreProvider>
       </TrafficCaseProvider>
     </DifficultyProvider>
   );

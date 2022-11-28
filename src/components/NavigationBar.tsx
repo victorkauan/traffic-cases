@@ -7,7 +7,7 @@ export default function NavigationBar() {
   const { score } = useScore();
 
   return (
-    <nav className="text-primary-blue w-full py-3 shadow">
+    <nav className="bg-white text-primary-blue w-full py-3 shadow fixed">
       <Container className="flex items-center justify-between">
         <h1>
           <Link
