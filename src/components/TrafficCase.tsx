@@ -10,6 +10,7 @@ interface TrafficCaseProps {
   description: string;
   youtube_code: string;
   guilty: number;
+  explanation: string;
 }
 
 export default function TrafficCase() {
@@ -46,7 +47,7 @@ export default function TrafficCase() {
   }
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-4">
         <h2 className="font-bold text-xl">{trafficCase?.title}</h2>
         <iframe
@@ -54,13 +55,13 @@ export default function TrafficCase() {
           className="w-full aspect-video rounded"
         ></iframe>
         <div>
-          <h3 className="font-bold">Descrição do caso:</h3>
+          <h3 className="font-bold mb-1">Descrição do caso:</h3>
           <p>{trafficCase?.description}</p>
         </div>
       </div>
-      <hr />
+      <hr className="bg-primary-blue h-0.5" />
       <div>
-        <h2 className="font-bold text-lg text-center pb-4">
+        <h2 className="font-bold text-lg text-center pb-2">
           Quem você considera o culpado pelo incidente/acidente?
         </h2>
         <div className="flex flex-col flex-wrap items-center justify-center gap-2 mml:flex-row">

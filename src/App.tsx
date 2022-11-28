@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from './components/Container';
 import NavigationBar from './components/NavigationBar';
 import TrafficCase from './components/TrafficCase';
+import Explanation from './components/Explanation';
 import ScoreProvider from './contexts/ScoreContext';
 
 export default function App() {
@@ -17,7 +18,10 @@ export default function App() {
             />
             <Route path="/jogar">
               <Route index element={<Link to="/jogar/1">Iniciar</Link>} />
-              <Route path=":id" element={<TrafficCase />} />
+              <Route path=":id">
+                <Route index element={<TrafficCase />} />
+                <Route path="explicacao" element={<Explanation />} />
+              </Route>
             </Route>
           </Routes>
         </Container>
