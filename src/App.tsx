@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Container from './components/Container';
 import NavigationBar from './components/NavigationBar';
+import Home from './components/Home';
 import Menu from './components/Menu';
 import TrafficCase from './components/TrafficCase';
 import Explanation from './components/Explanation';
@@ -13,7 +14,7 @@ export default function App() {
         <NavigationBar />
         <Container className="text-primary-blue my-6">
           <Routes>
-            <Route path="/" element={<h1>Hello, world!</h1>} />
+            <Route path="/" element={<Home />} />
             <Route path="/jogar">
               <Route index element={<Menu />} />
               <Route path=":id">
