@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Container from './components/Container';
+import Providers from './components/Providers';
 import NavigationBar from './components/NavigationBar';
+import Container from './components/Container';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import TrafficCase from './components/TrafficCase';
 import Explanation from './components/Explanation';
-import Providers from './components/Providers';
+import Score from './components/Score';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
                 <Route index element={<TrafficCase />} />
                 <Route path="explicacao" element={<Explanation />} />
               </Route>
+              <Route path="pontuacao" element={<Score />} />
             </Route>
           </Routes>
         </Container>
