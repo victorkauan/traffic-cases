@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaMotorcycle } from 'react-icons/fa';
 import { AiFillCar } from 'react-icons/ai';
 import Confetti from 'react-confetti';
@@ -7,7 +8,7 @@ import { useDifficulty } from '../contexts/DifficultyContext';
 import { useScore } from '../contexts/ScoreContext';
 
 export default function Score() {
-  const [numberOfPieces, setNumberOfPieces] = useState<number>(200);
+  const [numberOfPieces, setNumberOfPieces] = useState<number>(100);
 
   const { score, answeredCases } = useScore();
   const { difficulty } = useDifficulty();
@@ -62,6 +63,14 @@ export default function Score() {
           <p className="font-bold text-lg italic text-center">
             Dirija com segurança!
           </p>
+        </div>
+        <div className="flex items-center justify-center">
+          <Link
+            to={'/jogar'}
+            className="font-bold text-center text-xl text-white w-full bg-primary-blue border-primary-blue border-2 rounded px-2 py-1.5 transition-colors hover:bg-primary-dark-blue hover:border-primary-dark-blue hover:cursor-pointer mml:w-fit"
+          >
+            Jogar novamente
+          </Link>
         </div>
       </div>
     </>

@@ -31,7 +31,7 @@ export default function TrafficCase() {
           <p>{trafficCase?.description}</p>
         </div>
       </div>
-      <hr className="bg-primary-blue h-0.5" />
+      <hr className="bg-primary-blue" />
       <div>
         <h2 className="font-bold text-lg text-center pb-2">
           Quem você considera o culpado pelo incidente/acidente?
