@@ -35,7 +35,7 @@ export default function Menu() {
             <strong>Intermediário:</strong> 5 (cinco) casos;
           </li>
           <li>
-            <strong>Difícil:</strong> 10 (dez) casos.
+            <strong>Difícil:</strong> 8 (oito) casos.
           </li>
         </ul>
       </div>

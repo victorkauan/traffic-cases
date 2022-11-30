@@ -54,7 +54,7 @@ export default function Explanation() {
       quantityOfCases = 5;
       break;
     case 2:
-      quantityOfCases = 10;
+      quantityOfCases = 8;
       break;
   }
 
@@ -84,7 +84,7 @@ export default function Explanation() {
                 ? 'pontuacao'
                 : Number(parameterId) + 1
             }`}
-            className="font-bold text-center text-xl text-white w-full bg-primary-blue border-primary-blue border-2 rounded px-2 py-1.5 transition-colors hover:bg-primary-dark-blue hover:border-primary-dark-blue hover:cursor-pointer mml:w-fit"
+            className="font-bold text-center text-lg text-white w-full bg-primary-blue border-primary-blue border-2 rounded px-2 py-1.5 transition-colors hover:bg-primary-dark-blue hover:border-primary-dark-blue hover:cursor-pointer mml:w-fit"
           >
             {answeredCases.length >= quantityOfCases
               ? 'Finalizar'

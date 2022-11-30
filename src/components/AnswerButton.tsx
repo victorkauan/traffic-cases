@@ -53,7 +53,7 @@ export default function AnswerButton({ guilty }: AnswerButtonProps) {
       value={value}
       onClick={verifyAnswer}
       disabled={alreadyAnswered}
-      className={`font-bold ml:text-lg text-white w-full bg-primary-blue border-primary-blue border-2 rounded px-3 py-2 transition-colors hover:bg-primary-dark-blue hover:border-primary-dark-blue disabled:bg-gray-500 disabled:border-gray-500 disabled:cursor-not-allowed mml:w-fit`}
+      className={`font-bold text-lg text-white w-full bg-primary-blue border-primary-blue border-2 rounded px-3 py-2 transition-colors hover:bg-primary-dark-blue hover:border-primary-dark-blue disabled:bg-gray-500 disabled:border-gray-500 disabled:cursor-not-allowed mml:w-fit`}
     >
       {message}
     </button>

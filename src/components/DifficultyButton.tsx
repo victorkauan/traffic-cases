@@ -41,7 +41,7 @@ export default function DifficultyButton({
         setAnsweredCases([]);
         setDifficulty(difficultyCode);
       }}
-      className="font-bold text-center text-xl text-white bg-primary-blue border-primary-blue border-2 rounded px-2 py-1.5 block transition-colors hover:bg-primary-dark-blue hover:border-primary-dark-blue hover:cursor-pointer mml:w-fit"
+      className="font-bold text-center text-lg text-white bg-primary-blue border-primary-blue border-2 rounded px-2 py-1.5 block transition-colors hover:bg-primary-dark-blue hover:border-primary-dark-blue hover:cursor-pointer mml:w-fit"
     >
       {message}
     </Link>

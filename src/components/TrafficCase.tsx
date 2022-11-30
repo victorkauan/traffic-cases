@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import AnswerButton from './AnswerButton';
 import { useTrafficCase } from '../contexts/TrafficCaseContext';
 import { useScore } from '../contexts/ScoreContext';
@@ -10,8 +10,14 @@ export default function TrafficCase() {
   const { trafficCase, setTrafficCase, setAlreadyAnswered } = useTrafficCase();
 
   const { id: parameterId } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
+    if (Number(parameterId) >= trafficCases.length) {
+      navigate(`/jogar/${trafficCases.length - 1}`);
+      return;
+    }
+
     setAlreadyAnswered(
       answeredCases.some(({ id }) => id === Number(parameterId))
     );

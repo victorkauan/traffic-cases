@@ -1,82 +1,66 @@
 [
   {
     "id": 0,
-    "title": "Título 00",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 0,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "title": "Caso 01",
+    "description": "Motorista troca de faixa de repente e derruba motociclista em avenida",
+    "youtube_code": "_2dn8hoVxJo",
+    "guilty": 2,
+    "explanation": "Apesar do motociclista estar em alta velocidade na avenida, o motorista podia vê-lo facilmente pelo retrovisor uma vez que estava em seu campo de visão. Dessa forma, o principal culpado pelo acidente foi o motorista do carro."
   },
   {
     "id": 1,
-    "title": "Título 01",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
+    "title": "Caso 02",
+    "description": "Motociclista em alta velocidade bate em carro que muda de faixa em túnel",
+    "youtube_code": "q4w8QeW_4s8",
     "guilty": 2,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "explanation": "Mesmo com a altíssima velocidade do motociclista, a moto podia ser vista pelo retrovisor do carro bem antes da batida. O acidente ocorreu devido à troca de faixa brusca do motorista."
   },
   {
     "id": 2,
-    "title": "Título 02",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 1,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "title": "Caso 03",
+    "description": "Motociclista cai após batida na traseira de carro",
+    "youtube_code": "XFS-GJM4HVY",
+    "guilty": 2,
+    "explanation": "Por se tratar de uma via de alta velocidade, é fundamental que veículos, sobretudo, carros não freiem bruscamente, dado a quase impossibilidade dos veículos de trás pararem antes de colidirem."
   },
   {
     "id": 3,
-    "title": "Título 03",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 0,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "title": "Caso 04",
+    "description": "Motorista derruba motociclista em avenida",
+    "youtube_code": "IgZVyUiWoSg",
+    "guilty": 2,
+    "explanation": "O acidente teria sido evitado se o motorista tivesse olhado o retrovisor momentos antes de trocar de faixa."
   },
   {
     "id": 4,
-    "title": "Título 04",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 2,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "title": "Caso 05",
+    "description": "Motociclista bate na traseira de carro e sofre queda",
+    "youtube_code": "sHLdqyBRl9I",
+    "guilty": 0,
+    "explanation": "Por se tratar de um trecho da avenida sem sinalização, é essencial que os condutores, principalmente, motociclistas não estejam em altas velocidades, uma vez que muitos veículos param o trânsito bruscamente para entrarem na avenida."
   },
   {
     "id": 5,
-    "title": "Título 05",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 0,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "title": "Caso 06",
+    "description": "Moto em alta velocidade colide com carro ao fazer curva",
+    "youtube_code": "kNBG1420rDs",
+    "guilty": 1,
+    "explanation": "Mesmo a preferência sendo do motociclista, tornou-se praticamente impossível de perceber o carro realizando a curva devido à velocidade altíssima, assim como o carro não pôde ver a moto se aproximando durante a curva uma vez que não esperava tal velocidade."
   },
   {
     "id": 6,
-    "title": "Título 06",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 1,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "title": "Caso 07",
+    "description": "Motociclista bate em carro durante curva em avenida",
+    "youtube_code": "JNWAQCARE1Q",
+    "guilty": 2,
+    "explanation": "Além do carro não estar na faixa correta para realizar a curva, apenas ligou o pisca momentos antes de realizar o movimento, por isso, o motociclista acreditava que o veículo iria continuar em frente."
   },
   {
     "id": 7,
-    "title": "Título 07",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 1,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
-  },
-  {
-    "id": 8,
-    "title": "Título 08",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
+    "title": "Caso 08",
+    "description": "Moto bate em caminhão após curva brusca",
+    "youtube_code": "Padzrv7aUyk",
     "guilty": 2,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
-  },
-  {
-    "id": 9,
-    "title": "Título 09",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus explicabo repellat quas doloribus",
-    "youtube_code": "DZQVMYSK-fA",
-    "guilty": 0,
-    "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, soluta dicta. Aut delectus beatae magnam, rem perspiciatis quisquam id nemo doloribus iure, exercitationem corrupti ullam veritatis sequi praesentium, maxime unde."
+    "explanation": "O caminhão realizou um movimento muito brusco e de uma faixa oposta à rua que desejava entrar, à vista disso, o motociclista foi surpreendido pela curva do grande veículo."
   }
 ]
