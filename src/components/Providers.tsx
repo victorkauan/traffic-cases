@@ -1,5 +1,6 @@
 import DifficultyProvider from '../contexts/DifficultyContext';
 import ScoreProvider from '../contexts/ScoreContext';
+import AnsweredCasesProvider from '../contexts/AnsweredCasesContext';
 import TrafficCaseProvider from '../contexts/TrafficCaseContext';
 
 export default function Providers({
@@ -10,7 +11,9 @@ export default function Providers({
     <DifficultyProvider>
       <TrafficCaseProvider>
         <ScoreProvider>
-          <div className={className}>{children}</div>
+          <AnsweredCasesProvider>
+            <div className={className}>{children}</div>
+          </AnsweredCasesProvider>
         </ScoreProvider>
       </TrafficCaseProvider>
     </DifficultyProvider>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Confetti from 'react-confetti';
-import { useScore } from '../contexts/ScoreContext';
+import { useAnsweredCase } from '../contexts/AnsweredCasesContext';
 import { useDifficulty } from '../contexts/DifficultyContext';
 import trafficCases from '../mock/cases.json';
 
@@ -19,7 +19,7 @@ export default function Explanation() {
   const [correct, setCorrect] = useState<boolean>(false);
   const [numberOfPieces, setNumberOfPieces] = useState<number>(100);
 
-  const { answeredCases } = useScore();
+  const { answeredCases } = useAnsweredCase();
   const { difficulty } = useDifficulty();
 
   const { id: parameterId } = useParams();

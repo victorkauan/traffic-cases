@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useDifficulty } from '../contexts/DifficultyContext';
 import { useScore } from '../contexts/ScoreContext';
+import { useAnsweredCase } from '../contexts/AnsweredCasesContext';
 
 interface DifficultyButtonProps
   extends React.DetailedHTMLProps<
@@ -14,7 +15,8 @@ export default function DifficultyButton({
   difficulty,
 }: DifficultyButtonProps) {
   const { setDifficulty } = useDifficulty();
-  const { setScore, setAnsweredCases } = useScore();
+  const { setScore } = useScore();
+  const { setAnsweredCases } = useAnsweredCase();
 
   let message: string;
   let difficultyCode: number;

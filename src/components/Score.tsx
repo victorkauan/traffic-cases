@@ -6,11 +6,13 @@ import Confetti from 'react-confetti';
 import { GiThreeFriends } from 'react-icons/gi';
 import { useDifficulty } from '../contexts/DifficultyContext';
 import { useScore } from '../contexts/ScoreContext';
+import { useAnsweredCase } from '../contexts/AnsweredCasesContext';
 
 export default function Score() {
   const [numberOfPieces, setNumberOfPieces] = useState<number>(100);
 
-  const { score, answeredCases } = useScore();
+  const { score } = useScore();
+  const { answeredCases } = useAnsweredCase();
   const { difficulty } = useDifficulty();
 
   let quantityOfCases = 0;

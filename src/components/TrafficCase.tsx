@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import AnswerButton from './AnswerButton';
 import { useTrafficCase } from '../contexts/TrafficCaseContext';
-import { useScore } from '../contexts/ScoreContext';
+import { useAnsweredCase } from '../contexts/AnsweredCasesContext';
 import trafficCases from '../mock/cases.json';
 
 export default function TrafficCase() {
-  const { answeredCases } = useScore();
+  const { answeredCases } = useAnsweredCase();
   const { trafficCase, setTrafficCase, setAlreadyAnswered } = useTrafficCase();
 
   const { id: parameterId } = useParams();

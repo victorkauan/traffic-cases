@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes, MouseEvent } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useScore } from '../contexts/ScoreContext';
+import { useAnsweredCase } from '../contexts/AnsweredCasesContext';
 import { useTrafficCase } from '../contexts/TrafficCaseContext';
 
 interface AnswerButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,7 +9,8 @@ interface AnswerButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function AnswerButton({ guilty }: AnswerButtonProps) {
-  const { score, setScore, answeredCases, setAnsweredCases } = useScore();
+  const { score, setScore } = useScore();
+  const { answeredCases, setAnsweredCases } = useAnsweredCase();
   const { trafficCase, alreadyAnswered } = useTrafficCase();
 
   const { id: parameterId } = useParams();
