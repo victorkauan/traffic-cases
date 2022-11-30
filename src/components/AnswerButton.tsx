@@ -20,7 +20,7 @@ export default function AnswerButton({ guilty }: AnswerButtonProps) {
   let value;
   switch (guilty) {
     case 'bike':
-      message = 'Motociclista';
+      message = 'Moto';
       value = 0;
       break;
     case 'both':
@@ -28,7 +28,7 @@ export default function AnswerButton({ guilty }: AnswerButtonProps) {
       value = 1;
       break;
     case 'car':
-      message = 'Motorista';
+      message = 'Carro';
       value = 2;
       break;
   }
